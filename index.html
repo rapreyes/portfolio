@@ -168,16 +168,23 @@
   
   .projects-section {
     text-align: center;
-    padding: 8rem 2rem;
-    background: #6C808C;
+    padding: 10rem 2rem;
+    background: var(--main-white);
+    color:#0D0D0D;
   }
   .certificate-section {
     text-align: center;
-    padding: 2rem 2rem 5rem 2rem;
-    background: #0C2C40;
+    padding: 10rem 2rem;
+   
+    background: #083359;
   }
   
   .projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #0D0D0D;
+  }
+  .credentials-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid var(--main-white);
@@ -211,18 +218,22 @@
   }
   
   .project {
-    background: var(--main-gray);
+    background: #0D0D0D;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
   }
   
   .code {
-    color: var(--main-gray);
+    color: #0D0D0D;
     transition: color 0.3s ease-out;
   }
   
   .project:hover .code {
-    color: #ff7f50;
+    color: #66F2E4;
+   
+  }
+  .project-image:hover{
+      transform:scale(1.15);
   }
   
   .project-image {
@@ -427,7 +438,7 @@
   
 </section>
   <section id="credentials" class="certificate-section">
-  <h2 class="projects-section-header">Awards and Certifications</h2>
+  <h2 class="credentials-section-header">Awards and Certifications</h2>
 
   <div class="projects-grid">
     <a
