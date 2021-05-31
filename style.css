@@ -1,249 +1,245 @@
 :root {
-    --main-white: #F9FFFF;
-    --main-teal: #00979E;
-    --main-black: #070B0C;
-    --main-gray: #242424;
-  }
-  
-  /* Base reset */
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* box-sizing and font sizing */
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  html {
-    box-sizing: border-box;
-  
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-  }
-  
-  @media (max-width: 75em) {
-    html {
-      font-size: 60%;
-    }
-  }
-  
-  /* 980px / 16px = 61.25em */
-  @media screen and (max-width: 61.25em) {
-    html {
-      font-size: 58%;
-    }
-    .one{
-        float:none !important;
-        width:  100%   !important;
-    }
-    .two{
-        float:none !important;
-        width: 100%  !important  ;
-    }
-    .mid{
-      visibility: collapse;
-    }
-
-  
-  }
-  
-  /* 460px / 16px = 28.75em */
-  @media screen and (max-width: 28.75em) {
-    html {
-      font-size: 55%;
-    }
-    .one{
-        float:none !important;
-        width:  100%  !important;
-    }
-    .two{
-        float:none !important;
-        width: 100%   !important;
-    }
-.mid{
-  visibility: collapse;
+  --main-white: #F9FFFF;
+  --main-teal: #00979E;
+  --main-black: #070B0C;
+  --main-gray: #242424;
 }
-  
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
   }
- 
-  /*default css*/
-  /*home section*/
+}
+
+/* 980px / 16px = 61.25em */
+@media screen and (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+  .left-about-me, .credentials, .contact-section{
+      float:none !important;
+      width:  100%   !important;
+  }
+  .two{
+      float:none !important;
+      width: 100%  !important  ;
+  }
+  .mid{
+    visibility: collapse;
+  }
+
+
+}
+
+/* 460px / 16px = 28.75em */
+@media screen and (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+  .left-about-me,.credentials, .contact-section{
+      float:none !important;
+      width:  100%  !important;
+  }
+  .two{
+      float:none !important;
+      width: 100%   !important;
+  }
+.mid{
+visibility: collapse;
+}
+
+}
+
+/*default css*/
+/*home section*/
 .home{
-    background: url(img/icon.png), var(--main-gray);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+  background: url(img/icon.png), var(--main-gray);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 .home nav{
-    text-align: center;
-    padding-top:85vh;
-    
+  text-align: center;
+  padding-top:85vh;
+  
 }
 .home a, span{
-    padding-left: 25px;
-    font-size: 25px;
-    color:var(--main-teal) !important;
-    text-decoration: none;
+  padding-left: 25px;
+  font-size: 25px;
+  color:var(--main-teal) !important;
+  text-decoration: none;
 }
-  /*about me section*/
-  .container{
-    display:inline-flex;
-    flex-wrap:wrap;
-    height: 100vh;
+/*about me section*/
 
+
+.left-about-me{
+  width: 50%;
+  height:100vh;
+  background: var(--main-teal);
+  float: left;
+  justify-content: center;
   }
-  .flex-direction{
-    flex-direction:row;
-  }
 
-  .one{
-    width: 50%;
-    height:100vh;
-    background: var(--main-teal);
-    float: left;
-    justify-content: center;
-    }
- 
-    .one nav{
-        text-align: center;
-        padding-top:10vh;
-        
-    }
-    .one a, .one span{
-        padding-left: 25px;
-        font-size: 20px;
-        color:var(--main-white) !important;
-        text-decoration: none;
-    }
-    .one h1{
-        font-size: 75px;
-        padding-top: 50vh;
-        padding-left: 17px;
-        text-align: center;
-        color: var(--main-white);
-    }
-
-
- .two{
-      width:50%;
-      height:100vh;
-      background-color: var(--main-white);
-      float: right;
-      justify-content: center;
-      text-align: left;
-      overflow-y: auto;
-
-    }
-
-    .two p, h3{
-      font-size: 20px;  
-       margin-left:13%;
-      margin-right:10%;
-    }
-
-
- .p-intro {
-
-          margin-top: 15vh;
+  .left-about-me nav{
+      text-align: center;
+      padding-top:10vh;
       
-          
-    }
-    .two h3{
-     
-      padding-top: 5vh;
+  }
+  .left-about-me a, .s-about-me{
+      padding-left: 25px;
+      font-size: 20px;
+      color:var(--main-white) !important;
+      text-decoration: none;
+  }
+  .left-about-me h1{
+      font-size: 75px;
+      padding-top: 50vh;
+      padding-left: 17px;
+      text-align: center;
+      color: var(--main-white);
+  }
 
 
-     
-    }
+.two{
+    width:50%;
+    height:100vh;
+    background-color: var(--main-white);
+    float: right;
+    justify-content: center;
+    text-align: left;
+ 
+
+  }
+
+  .two p, h3{
+    font-size: 20px;  
+     margin-left:13%;
+     margin-right:10%;
+  }
+
+
+.p-intro {
+
+        margin-top: 15vh;
+    
+        
+  }
+  .two h3{
+   
+    margin-top: 5vh;
+
+   
+  }
 .p-about-me{
 
-      padding-top: 1vh !important;
-     
-     
+    margin-top: 1vh !important;
+       
 }
-    .mid img{
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        float: left ;
-     
-    }
-    .mid
-    {
-      padding-top: 15vh;
-        margin-left: 44%;
-        margin-right: auto;
-        border-radius: 50%;
-        float: left;
-    text-align: center;
+.mid img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  float: left ;
+
+}
+.mid
+{
+padding-top: 15vh;
+margin-left: 44%;
+margin-right: auto;
+border-radius: 50%;
+float: left;
     position: absolute;
 z-index: 2;
-    }
-    .about_context{
-      overflow-y: auto;
-    }
+height: 150px;
 
-  
-      
-  /*Credential Section*/
+}
+/*Credential Section*/
+
 .credentials{
-    width: 50%;
-    height:100vh;
-    background: var(--main-white);
-    float: left;
-    justify-content: center;
-    }
- 
-    .credentials nav{
-        text-align: center;
-        padding-top:10vh;
-        
-    }
-    .credentials a, .credntials span{
-        padding-left: 25px;
-        font-size: 20px;
-        color:var(--main-black) !important;
-        text-decoration: none;
-    }
+  width: 50%;
+  height:100vh;
+  background: var(--main-white);
+  float: left;
+  justify-content: center;
+  }
 
-    .credentials h1{
-        font-size: 75px;
-        padding-top: 50vh;
-        padding-left: 17px;
-        text-align: center;
-        color: var(--main-black);
-    }
+  .credentials nav{
+      text-align: center;
+      padding-top:10vh;
+      
+  }
 
-    /*contact sections*/
-    .contact-section{
-        width: 50%;
-        height:100vh;
-        background: var(--main-black);
-        float: left;
-        justify-content: center;
-        }
-     
-        .contact-section nav{
-            text-align: center;
-            padding-top:10vh;
-            
-        }
-        .contact-section a, .one span{
-            padding-left: 25px;
-            font-size: 20px;
-            color:var(--main-white) !important;
-            text-decoration: none;
-        }
-
-        .contact-section h1{
-            font-size: 75px;
-            padding-top: 50vh;
-            padding-left: 17px;
-            text-align: center;
-            color: var(--main-white);
-        }
+  .credentials a, .s-credentials{
+      padding-left: 25px;
+      font-size: 20px;
+      color:var(--main-black) !important;
+      text-decoration: none;
+  }
     
+
+  .credentials h1{
+      font-size: 75px;
+      padding-top: 50vh;
+      padding-left: 17px;
+      text-align: center;
+      color: var(--main-black);
+  }
+
+  /*contact sections*/
+ 
+  .contact-section{
+      width: 50%;
+      height:100vh;
+      background: var(--main-black);
+      float: left;
+      justify-content: center;
+      }
+    
+      .contact-section nav{
+          text-align: center;
+          padding-top:10vh;
+          
+      }
+   
+      .contact-section a, .one span{
+          padding-left: 25px;
+          font-size: 20px;
+          color:var(--main-white) !important;
+          text-decoration: none;
+      }
+
+      .contact-section h1{
+          font-size: 75px;
+          padding-top: 50vh;
+          padding-left: 17px;
+          text-align: center;
+          color: var(--main-white);
+      }
+/*beta*/
+#contacts,#credential{
+  width: 100%;
+ 
+
+ float: left; 
+}
