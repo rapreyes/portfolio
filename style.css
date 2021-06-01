@@ -40,7 +40,7 @@ html {
       float:none !important;
       width:  100%   !important;
   }
-  .two{
+  .about_context,.credential-context, .contact-context{
       float:none !important;
       width: 100%  !important  ;
   }
@@ -60,7 +60,7 @@ html {
       float:none !important;
       width:  100%  !important;
   }
-  .two{
+  .about_context,.credential-context ,.contact-context{
       float:none !important;
       width: 100%   !important;
   }
@@ -120,7 +120,7 @@ visibility: collapse;
   }
 
 
-.two{
+.about_context{
     width:50%;
     height:100vh;
     background-color: var(--main-white);
@@ -131,7 +131,7 @@ visibility: collapse;
 
   }
 
-  .two p, h3{
+  .about_context p,  .about_context h3, .credential-context p, .credential-context h3{
     font-size: 20px;  
      margin-left:13%;
      margin-right:10%;
@@ -144,13 +144,13 @@ visibility: collapse;
     
         
   }
-  .two h3{
+  .about_context h3{
    
     margin-top: 5vh;
 
    
   }
-.p-about-me{
+.p-about-me, .credential-context p{
 
     margin-top: 1vh !important;
        
@@ -195,6 +195,7 @@ height: 150px;
       font-size: 20px;
       color:var(--main-black) !important;
       text-decoration: none;
+    
   }
     
 
@@ -204,8 +205,70 @@ height: 150px;
       padding-left: 17px;
       text-align: center;
       color: var(--main-black);
+      
+  }
+.credential-context{
+  overflow-y: auto;
+  width:50%;
+  height:100vh;
+  background-color: var(--main-white);
+  float: right;
+  justify-content: center;
+  text-align: left;
+
+  
+
+}
+.credential-context h3{
+ padding-top: 30vh;
+}
+.fcc,.nc3-vgd, .rics-cwd, .award{
+  position: relative;
+  
+ width: 100%;
+
+}
+
+.credential-context img{
+  width: 100%;
+  height: 450px;
+
+}
+  
+  .credential-context .img-text{
+    position: absolute;
+    right: 0;
+    bottom:0;
+    background: var(--main-black);
+    color: var(--main-white);
+    margin-bottom: 5px;
+    font-family: sans-serif;
+   opacity: 0;
+   visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+    height: 450px;
+    width: 100%;
+    
   }
 
+  .fcc:hover .img-text{
+    visibility: visible;
+ opacity: 0.7; 
+}.nc3-vgd:hover .img-text{
+    visibility: visible;
+ opacity: 0.7; 
+} .rics-cwd:hover .img-text{
+    visibility: visible;
+ opacity: 0.7; 
+} 
+  .award:hover .img-text{
+       visibility: visible;
+    opacity: 0.7; 
+   }
+    
+  
+ 
   /*contact sections*/
  
   .contact-section{
