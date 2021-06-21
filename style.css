@@ -34,7 +34,7 @@ html {
 /* 980px / 16px = 61.25em */
 @media screen and (max-width: 61.25em) {
   html {
-    font-size: 58%;
+    font-size: 55%;
   }
   .left-about-me, .credentials, .contact-section{
       float:none !important;
@@ -45,6 +45,9 @@ html {
       width: 100%  !important  ;
   }
   .mid{
+    visibility: collapse;
+  }
+  nav {
     visibility: collapse;
   }
 
@@ -63,6 +66,9 @@ html {
   .about_context,.credential-context ,.contact-context{
       float:none !important;
       width: 100%   !important;
+  }
+  nav {
+    visibility: collapse;
   }
 .mid{
 visibility: collapse;
@@ -131,7 +137,11 @@ visibility: collapse;
 
   }
 
-  .about_context p,  .about_context h3, .credential-context p, .credential-context h3{
+  .about_context p,
+    .about_context h3, 
+    .credential-context p, 
+    .credential-context h3
+   {
     font-size: 20px;  
      margin-left:13%;
      margin-right:10%;
@@ -182,6 +192,8 @@ height: 150px;
   background: var(--main-white);
   float: left;
   justify-content: center;
+
+ 
   }
 
   .credentials nav{
@@ -190,7 +202,7 @@ height: 150px;
       
   }
 
-  .credentials a, .s-credentials{
+  .credentials a, .credentials span{
       padding-left: 25px;
       font-size: 20px;
       color:var(--main-black) !important;
@@ -208,16 +220,21 @@ height: 150px;
       
   }
 .credential-context{
-  overflow-y: auto;
+ 
   width:50%;
   height:100vh;
   background-color: var(--main-white);
   float: right;
   justify-content: center;
   text-align: left;
-
+  overflow-y: auto;
+  z-index: 2;
   
 
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 .credential-context h3{
  padding-top: 30vh;
@@ -299,6 +316,7 @@ height: 150px;
           text-align: center;
           color: var(--main-white);
       }
+      
 /*beta*/
 #contacts,#credential{
   width: 100%;
@@ -306,3 +324,51 @@ height: 150px;
 
  float: left; 
 }
+.contact-section span{
+  color: var(--main-white) !important;
+}
+.contact-context{
+  height: 100vh;
+  float: right;
+  justify-content: left;
+  text-align: left;
+  width: 50%;
+}
+.p-contact{
+
+  font-size: 2.4rem;
+}
+.contact-context p, .mailto ,h1, .p-contact{
+  padding-top: 10vh;
+  text-decoration: none !important;
+  font-size: 2.4rem;
+  margin-left: 75px;
+
+}
+.mailto{
+  color: var(--main-teal);
+}
+
+i{
+  font-size: 3rem !important;
+  margin-left: 13%;
+  padding-top: 5vh;
+}
+.contact-details {
+  font-size: 2.4rem;
+ text-decoration: none !important;
+ color: var(--main-black);
+  transition: transform 0.3s ease-out;
+  
+}
+
+/*Footer*/
+
+.copyright{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-teal);
+  float: left;
+  justify-content: center;
+}
+
