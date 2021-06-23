@@ -18,6 +18,16 @@
 
 </head>
 <body>
+ 
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#top"  onclick="closeNav()" >Home</a> 
+       <a href="#about-me" onclick="closeNav()">About Me</a> 
+       <a href="#credential" onclick="closeNav()">Credentials</a> 
+    <a href="#contacts" onclick="closeNav()">Contact</a>
+  </div>
+  <span id="hamburger" class="hamburger-menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
     <div class="home" id="top">
         <nav>
           
@@ -159,8 +169,21 @@
             </div>
            
     
-    </div>
-      <div class="copyright"></div>
-</body>
+      </div>
+      <div class="copyright">
+        
+      </div>
 
+      <script>
+       function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+ 
+}
+
+        function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+
+}
+        </script>
+</body>
 </html>

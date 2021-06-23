@@ -2,7 +2,7 @@
   --main-white: #F9FFFF;
   --main-teal: #00979E;
   --main-black: #070B0C;
-  --main-gray: #242424;
+  --main-gray: #858585;
 }
 
 /* Base reset */
@@ -34,35 +34,24 @@ html {
 /* 980px / 16px = 61.25em */
 @media screen and (max-width: 61.25em) {
   html {
-    font-size: 55%;
+    font-size: 55% !important;
   }
-  .left-about-me, .credentials, .contact-section{
-      float:none !important;
-      width:  100%   !important;
-  }
-  .about_context,.credential-context, .contact-context{
-      float:none !important;
-      width: 100%  !important  ;
-  }
-  .mid{
-    visibility: collapse;
-  }
-  nav {
-    visibility: collapse;
-  }
-
-
-}
-
-/* 460px / 16px = 28.75em */
-@media screen and (max-width: 28.75em) {
-  html {
-    font-size: 55%;
+  .home{
+    background: url(img/icon-mini.png), var(--main-gray) !important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+  
+  
   }
   .left-about-me,.credentials, .contact-section{
       float:none !important;
       width:  100%  !important;
+      justify-content: center !important;
   }
+  .left-about-me h1,.credentials h1, .contact-section h1{
+    padding-right: 4% !important;
+    font-size: 60px !important;
+}
   .about_context,.credential-context ,.contact-context{
       float:none !important;
       width: 100%   !important;
@@ -70,10 +59,76 @@ html {
   nav {
     visibility: collapse;
   }
-.mid{
-visibility: collapse;
+  .mid{
+  visibility: collapse;
+}
+.sidenav {
+  padding-top: 15px;
+}
+.sidenav a {
+  font-size: 18px;
+}
+.hamburger-menu{
+  visibility: visible !important;
+}
 }
 
+/* 460px / 16px = 28.75em */
+@media screen and (max-width: 28.75em) {
+  html {
+    font-size: 55% !important;
+  }
+  
+    .home{
+      background: url(img/icon-mini.png), var(--main-gray) !important;
+      background-position: center!important;
+      background-repeat: no-repeat!important;
+    
+    
+    }
+ 
+  .left-about-me,.credentials, .contact-section{
+      float:none !important;
+      width:  100%  !important;
+      justify-content: center !important;
+  }
+  .left-about-me h1,.credentials h1, .contact-section h1{
+  padding-right: 6% !important;
+   font-size: 60px !important;
+   margin-left:  0!important;
+}
+  .about_context,.credential-context ,.contact-context{
+      float:none !important;
+      width: 100%   !important;
+  }
+  nav {
+    visibility: collapse;
+  }
+  .mid{
+  visibility: collapse;
+}
+.sidenav {
+  padding-top: 15px;
+}
+.sidenav a {
+  font-size: 18px;
+}
+.hamburger-menu{
+  visibility: visible !important;
+}
+.p-contact{
+
+  font-size: 2.4rem;
+}
+.contact-context p, .mailto ,.contact-context h1, .p-contact{
+
+  text-decoration: none !important;
+  font-size: 2rem !important;
+  padding-right: 5% !important;
+  margin-left: 13%!important;
+
+
+}
 }
 
 /*default css*/
@@ -92,7 +147,7 @@ visibility: collapse;
 .home a, span{
   padding-left: 25px;
   font-size: 25px;
-  color:var(--main-teal) !important;
+  color: #12dbd5 !important;
   text-decoration: none;
 }
 /*about me section*/
@@ -346,7 +401,7 @@ height: 150px;
 
 }
 .mailto{
-  color: var(--main-teal);
+  color: #12dbd5;
 }
 
 i{
@@ -358,7 +413,7 @@ i{
   font-size: 2.4rem;
  text-decoration: none !important;
  color: var(--main-black);
-  transition: transform 0.3s ease-out;
+
   
 }
 
@@ -372,3 +427,52 @@ i{
   justify-content: center;
 }
 
+/*hamburger menu*/
+.hamburger-menu{
+  margin-top: 3vh;
+  margin-left: 1vh;
+  float:left;
+ position:fixed;
+  top: 3vh;
+ visibility: collapse;
+ z-index: 1;
+}
+
+/*sidenav*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: var(--main-teal);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--main-white);
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: var(--main-black);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
