@@ -134,7 +134,7 @@ html {
 /*default css*/
 /*home section*/
 .home{
-  background: url(img/icon.png), var(--main-gray);
+  background: url(img/icon.png), var(--main-white);
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
