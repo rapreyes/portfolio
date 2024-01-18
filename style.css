@@ -325,20 +325,20 @@ height: 150px;
   }
 .gda:hover .img-text{
     visibility: visible;
- opacity: 1; 
+ opacity: 0.8; 
 }.fcc:hover .img-text{
     visibility: visible;
- opacity: 1; 
+ opacity: 0.8; 
 }.nc3-vgd:hover .img-text{
     visibility: visible;
- opacity: 1; 
+ opacity: 0.8; 
 } .rics-cwd:hover .img-text{
     visibility: visible;
- opacity: 1; 
+ opacity: 0.8; 
 } 
   .award:hover .img-text{
        visibility: visible;
-    opacity: 1; 
+    opacity: 0.8; 
    }
     
   
