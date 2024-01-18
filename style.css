@@ -294,7 +294,7 @@ height: 150px;
 .credential-context h3{
  padding-top: 30vh;
 }
-.fcc,.nc3-vgd, .rics-cwd, .award{
+.fcc,.nc3-vgd, .rics-cwd, .award,.gda{
   position: relative;
   
  width: 100%;
@@ -323,20 +323,22 @@ height: 150px;
     width: 100%;
     
   }
-
+.gda:hover .img-text{
+    visibility: visible;
+ opacity: 0.9; 
   .fcc:hover .img-text{
     visibility: visible;
- opacity: 0.7; 
+ opacity: 0.9; 
 }.nc3-vgd:hover .img-text{
     visibility: visible;
- opacity: 0.7; 
+ opacity: 0.9; 
 } .rics-cwd:hover .img-text{
     visibility: visible;
- opacity: 0.7; 
+ opacity: 0.9; 
 } 
   .award:hover .img-text{
        visibility: visible;
-    opacity: 0.7; 
+    opacity: 0.9; 
    }
     
   
