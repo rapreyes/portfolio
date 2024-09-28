@@ -323,7 +323,10 @@ height: 150px;
     width: 100%;
     
   }
-.gda:hover .img-text{
+.dq:hover .img-text{
+    visibility: visible;
+ opacity: 0.8; 
+}.gda:hover .img-text{
     visibility: visible;
  opacity: 0.8; 
 }.fcc:hover .img-text{
